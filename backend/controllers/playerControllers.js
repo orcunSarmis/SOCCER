@@ -14,3 +14,11 @@ export const addNewPlayer = (req, res) => {
     });
 };
 
+export const getPlayer = (req, res) => {
+    Player.find({},(err, Player) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json(Player);
+    });
+};

@@ -5,9 +5,9 @@ import routes from './routes/soccerRoutes';
 
 
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
 
-// mongo db conection
+// mongodb conection
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://127.0.0.1/soccerDB', {
     useNewUrlParser: true,
